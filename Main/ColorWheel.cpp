@@ -35,7 +35,8 @@ int main()
     return 0;
 }
 
-int gettestCases(){
+int gettestCases()
+{
 
     int testCases;
     cin >> testCases;
