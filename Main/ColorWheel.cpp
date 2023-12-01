@@ -12,7 +12,6 @@ int main()
     for (int testcase = 0; testcase < testCases; testcase++)
     {
         string color;
-        cout << "What color would you like to make? " << testcase + 1 << ": ";
         getline(cin, color);
 
         if (color == "violet")
