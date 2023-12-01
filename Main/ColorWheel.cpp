@@ -2,12 +2,14 @@
 #include <string>
 using namespace std;
 
+int testCases;
+
+int gettestCases();
+
 int main()
 {
-    int testCases;
-    cout << "Enter the number of test cases: ";
-    cin >> testCases;
-    cin.ignore();
+
+    gettestCases();
 
     for (int testcase = 0; testcase < testCases; testcase++)
     {
@@ -33,7 +35,15 @@ int main()
         }
     }
 
-    cout << "Program execution complete." << endl;
-
     return 0;
+}
+
+int gettestCases(){
+
+    int testCases;
+    cout << "Enter the number of test cases: ";
+    cin >> testCases;
+    cin.ignore();
+
+    return testCases;
 }
