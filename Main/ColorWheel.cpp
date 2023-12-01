@@ -2,19 +2,17 @@
 #include <string>
 using namespace std;
 
-int testCases;
-
 int gettestCases();
 
 int main()
 {
 
-    gettestCases();
+    int testCases = gettestCases();
 
     for (int testcase = 0; testcase < testCases; testcase++)
     {
         string color;
-        cout << "Enter color for test case " << testcase + 1 << ": ";
+        cout << "What color would you like to make? " << testcase + 1 << ": ";
         getline(cin, color);
 
         if (color == "violet")
