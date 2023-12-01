@@ -39,7 +39,6 @@ int main()
 int gettestCases(){
 
     int testCases;
-    cout << "Enter the number of test cases: ";
     cin >> testCases;
     cin.ignore();
 
