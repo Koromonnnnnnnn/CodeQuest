@@ -7,7 +7,8 @@ int gettestCases();
 int main()
 {
 
-    int testCases = gettestCases();
+    const int testCases = gettestCases();
+    string finalOutput = "";
 
     for (int testcase = 0; testcase < testCases; testcase++)
     {
@@ -16,21 +17,26 @@ int main()
 
         if (color == "violet")
         {
-            cout << "In order to make violet, blue and red must be mixed." << endl;
+            finalOutput += "In order to make violet, blue and red must be mixed.";
         }
         else if (color == "blue-green")
         {
-            cout << "In order to make blue-green, blue and yellow must be mixed." << endl;
+            finalOutput += "In order to make blue-green, blue and yellow must be mixed.";
         }
         else if (color == "yellow")
         {
-            cout << "No colors need to be mixed to make yellow." << endl;
+            finalOutput += "No colors need to be mixed to make yellow.";
         }
         else if (color == "orange")
         {
-            cout << "In order to make orange, red and yellow must be mixed." << endl;
+            finalOutput += "In order to make orange, red and yellow must be mixed.";
+        }
+        if (testcase != (testCases - 1))
+        {
+            finalOutput += "\n";
         }
     }
+    cout << finalOutput;
 
     return 0;
 }
