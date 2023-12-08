@@ -9,6 +9,7 @@ int main()
 
     const int testCases = gettestCases();
     string finalOutput = "";
+    string colors = {"Blue-Violet", "Blue", "Blue-Green", "Green", "Orange", "Red", "Red-Orange", "Red - Violet", "Violet", "Yellow", "Yellow-Green", "Yellow-Orange"};
 
     for (int testcase = 0; testcase < testCases; testcase++)
     {
