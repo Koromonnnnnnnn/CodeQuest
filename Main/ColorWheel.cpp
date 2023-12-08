@@ -19,7 +19,7 @@ int main()
         {
             finalOutput += "In order to make violet, blue and red must be mixed.";
         }
-        else if (color == "blue-green")
+        else if (color == "blue green")
         {
             finalOutput += "In order to make blue-green, blue and yellow must be mixed.";
         }
