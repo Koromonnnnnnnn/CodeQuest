@@ -28,6 +28,8 @@ int main()
 
     const int testCases = gettestCases();
     string finalOutput = "";
+    string isAnagram = " ";
+    string notAnagram = " ";
 
     for (int testcase = 0; testcase < testCases; testcase++)
     {
@@ -42,10 +44,12 @@ int main()
         {
             cout << "Not Found" << endl;
         }
-        
+
         if (testcase != (testCases - 1))
         {
             finalOutput += "\n";
+            isAnagram += " = ANAGRAM";
+            notAnagram += " = NOT AN ANAGRAM";
         }
     }
 
