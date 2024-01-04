@@ -31,12 +31,14 @@ int main()
     string isAnagram = " ";
     string notAnagram = " ";
 
+    string seperator = "|";
+
     for (int testcase = 0; testcase < testCases; testcase++)
     {
         string text;
         getline(cin, text);
 
-        if (text.find("|") < text.length())
+        if (text.find(seperator) < text.length())
         {
             cout << "Found" << endl;
         }
