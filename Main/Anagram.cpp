@@ -27,7 +27,7 @@ int main()
 {
 
     int testCases;
-    string finalOutput = "";
+    string finalOutput = {" "};
     cin >> testCases;
     cin.ignore();
 
@@ -43,13 +43,14 @@ int main()
 
         if (areAnagram(firstPart, secondPart))
         {
-            cout << "= ANAGRAM\n";
+            finalOutput.append(" = ANAGRAM");
         }
         else
         {
-            cout << "= NOT AN ANAGRAM\n";
+            finalOutput.append(" = NOT AN ANAGRAM");
         }
-        
+
+        cout << finalOutput << '\n';
     }
 
     return 0;
