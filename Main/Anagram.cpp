@@ -26,46 +26,31 @@ bool areAnagram(string str1, string str2)
 int main()
 {
 
-    const int testCases = gettestCases();
-    string finalOutput = "";
-    string isAnagram = " ";
-    string notAnagram = " ";
-
-    string seperator = "|";
-
-    for (int testcase = 0; testcase < testCases; testcase++)
-    {
-        string text;
-        getline(cin, text);
-
-        if (text.find(seperator) < text.length())
-        {
-            cout << "Found" << endl;
-        }
-        else
-        {
-            cout << "Not Found" << endl;
-        }
-
-        if (testcase != (testCases - 1))
-        {
-            finalOutput += "\n";
-            isAnagram += " = ANAGRAM";
-            notAnagram += " = NOT AN ANAGRAM";
-        }
-    }
-
-    cout << finalOutput;
-
-    return 0;
-}
-
-int gettestCases()
-{
-
     int testCases;
+    string finalOutput = "";
     cin >> testCases;
     cin.ignore();
 
-    return testCases;
+    for (int i = 0; i < testCases; ++i)
+    {
+        string data;
+        getline(cin, data, '|');
+
+        string firstPart = data;
+        getline(cin, data);
+
+        string secondPart = data;
+
+        if (areAnagram(firstPart, secondPart))
+        {
+            cout << "= ANAGRAM\n";
+        }
+        else
+        {
+            cout << "= NOT AN ANAGRAM\n";
+        }
+        
+    }
+
+    return 0;
 }
