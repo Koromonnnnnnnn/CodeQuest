@@ -51,7 +51,8 @@ int main()
         {
             cout << "true" << endl;
         }
-        else if (gorrillaOne == true && gorrillaTwo == false){
+        else if (gorrillaOne == true && gorrillaTwo == false)
+        {
             cout << "false" << endl;
         }
     }
