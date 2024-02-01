@@ -24,19 +24,19 @@ int main()
 
         string secondPart = space;
 
-        if (firstPart == "true" || firstPart == "True")
+        if (firstPart == "true")
         {
             gorrillaOne = true;
         }
-        else if (firstPart == "false" || firstPart == "False")
+        else if (firstPart == "false")
         {
             gorrillaOne == false;
         }
-        if (secondPart == "true" || secondPart == "True")
+        if (secondPart == "true")
         {
             gorrillaTwo = true;
         }
-        else if (secondPart == "false" || secondPart == "False")
+        else if (secondPart == "false")
         {
             gorrillaTwo = false;
         }
