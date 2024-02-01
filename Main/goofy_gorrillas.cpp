@@ -10,6 +10,7 @@ bool gorrillaTwo;
 int main()
 {
     int testCases;
+    string finalOutput = "";
     cin >> testCases;
     string dummy;
     getline(cin, dummy);
@@ -41,19 +42,28 @@ int main()
         }
         if (gorrillaOne == false && gorrillaTwo == false)
         {
-            cout << "false" << endl;
+            finalOutput += "false";
         }
         else if (gorrillaOne == false && gorrillaTwo == true)
         {
-            cout << "false" << endl;
+            finalOutput += "false";
         }
         else if (gorrillaOne == true && gorrillaTwo == true)
         {
-            cout << "true" << endl;
+            finalOutput += "true";
         }
         else if (gorrillaOne == true && gorrillaTwo == false)
         {
-            cout << "false" << endl;
+            finalOutput += "false";
+        }
+
+        if (testcase != (testCases - 1))
+        {
+            finalOutput += "\n";
         }
     }
+
+    cout << finalOutput;
+
+    return 0;
 }
