@@ -23,19 +23,19 @@ int main()
 
         string secondPart = space;
 
-        if (firstPart == "true")
+        if (firstPart == "true" || firstPart == "True")
         {
             gorrillaOne = true;
         }
-        else if (firstPart == "false")
+        else if (firstPart == "false" || firstPart == "False")
         {
             gorrillaOne == false;
         }
-        if (secondPart == "true")
+        if (secondPart == "true" || secondPart == "True")
         {
             gorrillaTwo = true;
         }
-        else if (secondPart == "false")
+        else if (secondPart == "false" || secondPart == "False")
         {
             gorrillaTwo = false;
         }
@@ -50,6 +50,9 @@ int main()
         else if (gorrillaOne == true && gorrillaTwo == true)
         {
             cout << "true" << endl;
+        }
+        else if (gorrillaOne == true && gorrillaTwo == false){
+            cout << "false" << endl;
         }
     }
 }
