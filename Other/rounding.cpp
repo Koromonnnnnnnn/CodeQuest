@@ -2,6 +2,7 @@
 #include <string>
 #include <cmath>
 #include <cstdlib>
+#include <windows.h>
 using namespace std;
 
 int halfRound(int val, int dec)
@@ -31,4 +32,5 @@ int halfRound(int val, int dec)
     }
 
     cout << roundedVal << endl;
+    return roundedVal;
 }
