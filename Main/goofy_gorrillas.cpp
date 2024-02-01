@@ -64,4 +64,6 @@ int main()
     }
 
     cout << finalOutput;
+
+    return 0;
 }
