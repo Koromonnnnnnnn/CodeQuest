@@ -23,7 +23,6 @@ int main()
         getline(cin, space);
 
         string secondPart = space;
-
         if (firstPart == "true")
         {
             gorrillaOne = true;
@@ -40,19 +39,11 @@ int main()
         {
             gorrillaTwo = false;
         }
-        if (gorrillaOne == false && gorrillaTwo == false)
-        {
-            finalOutput += "false";
-        }
-        else if (gorrillaOne == false && gorrillaTwo == true)
-        {
-            finalOutput += "false";
-        }
-        else if (gorrillaOne == true && gorrillaTwo == true)
+        if (gorrillaOne == true && gorrillaTwo == true)
         {
             finalOutput += "true";
         }
-        else if (gorrillaOne == true && gorrillaTwo == false)
+        else
         {
             finalOutput += "false";
         }
