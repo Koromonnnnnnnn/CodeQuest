@@ -44,14 +44,14 @@ int main()
         if (areAnagram(firstPart, secondPart))
         {
             finalOutput.append(" = ANAGRAM");
-            cout << data << finalOutput << '\n';
+            cout << firstPart<<'|'<<secondPart<< finalOutput << '\n';
         }
         else
         {
             finalOutput.append(" = NOT AN ANAGRAM");
-            cout << data << finalOutput << '\n';
+            cout << firstPart << '|' << secondPart << finalOutput << '\n';
         }
-
+        finalOutput.clear();
     }
 
     return 0;
