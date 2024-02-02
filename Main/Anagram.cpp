@@ -27,7 +27,7 @@ int main()
 {
 
     int testCases;
-    string finalOutput = {" "};
+    string finalOutput = {""};
     cin >> testCases;
     cin.ignore();
 
