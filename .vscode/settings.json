@@ -4,6 +4,8 @@
         "ostream": "cpp",
         "xstring": "cpp",
         "istream": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "cstdlib": "cpp",
+        "string": "cpp"
     }
 }
