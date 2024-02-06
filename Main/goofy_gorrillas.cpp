@@ -48,6 +48,9 @@ int main()
             finalOutput += "false";
         }
 
+        gorrillaOne = false;
+        gorrillaTwo = false;
+
         if (testcase != (testCases - 1))
         {
             finalOutput += "\n";
