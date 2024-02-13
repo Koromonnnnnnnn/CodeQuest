@@ -6,6 +6,21 @@ using namespace std;
 
 int totalSand = 0;
 
+int *GetBigInteger(string str)
+{
+    int x = str.size(), a = 0;
+
+    int *arr = new int[str.size()];
+
+    while (a != x)
+    {
+        arr[a] = str[a] - '0';
+        a++;
+    }
+
+    return arr;
+}
+
 int main()
 {
     int testCases;
@@ -18,9 +33,9 @@ int main()
     {
         for (int teamNums = 0; teamNums < teamNum; teamNums++)
         {
-            long long sandCount;
-            cin >> sandCount;
-            totalSand += sandCount;
+            string sandCount;
+            int* arr = GetBigInteger(sandCount);
+
         }
         cout << totalSand << endl;
     }
