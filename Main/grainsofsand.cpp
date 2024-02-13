@@ -2,6 +2,7 @@
 #include <string>
 #include <cmath>
 #include <cstdlib>
+#include <numeric>
 using namespace std;
 
 int totalSand = 0;
@@ -34,8 +35,14 @@ int main()
         for (int teamNums = 0; teamNums < teamNum; teamNums++)
         {
             string sandCount;
-            int* arr = GetBigInteger(sandCount);
+            cin >> sandCount;
+            int *arr = GetBigInteger(sandCount);
 
+            for (int i = 0; i < sizeof(arr); i++)
+            {
+                totalSand = totalSand += arr[i];
+                cout << totalSand << endl; // for testing
+            }
         }
         cout << totalSand << endl;
     }
